@@ -87,7 +87,7 @@ var $jq = jQuery.noConflict();
 $jq(function() {
     
     $jq("button.menu-toggle").click(function() {
-        $jq("#primary-menu").slideToggle();
+        $jq("#primary-menu").stop().slideToggle();
     });
     
 });

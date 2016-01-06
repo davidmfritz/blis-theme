@@ -912,7 +912,11 @@ object {
     clear: both;
 }
 
+
+/* mobile view */
 @media screen and (max-width: 599px) {
+    
+    /* menu toggle button styling */
     .menu-toggle, .menu-toggle:active, .menu-toggle:focus, .menu-toggle:hover {
         width: 100%;
         text-align: right;
@@ -934,12 +938,13 @@ object {
         color: #404040;
     }
     
+    /* menu styling */
     .menu-hauptmenue-container li {
         float: none;
     }
     
     .main-navigation a {
-        padding: 10px;
+        padding: 20px;
         min-height: 48px;
         width: inherit;
     }
@@ -954,25 +959,40 @@ object {
         background-color: green;
     }
     
-    .sub-menu li {
-        margin-left: -10px;
-        padding-left: 10px;
-    }
-    
-    .sub-menu li a {
-        padding-left: 20px;
-        width: 100% !important;
-    }
-    
-    .sub-menu .sub-menu li a {
-        padding-left: 30px;
-    }
-    
     .main-navigation ul ul li:hover > ul {
         left: 0 !important;
     }
     
-    .sub-menu, .sub-menu li, .sub-menu li a {
+    .sub-menu {
         display: block !important;
+        margin-left: -20px;
+    }
+    
+    .sub-menu li {
+        display: block !important;
+        margin-left: -20px;
+        padding-left: 20px;
+    }
+    
+    .sub-menu li a {
+        display: block !important;
+        padding-left: 40px;
+        width: 100% !important;
+    }
+    
+    .sub-menu .sub-menu li a {
+        padding-left: 60px;
+    }
+    
+} /* end mobile view */
+
+
+/* desktop view */
+@media screen and (min-width: 600px) {
+    .menu-item a {
+        min-height: 48px;
+        line-height: 48px;
+        padding: 15px 5px;
+        margin-right: 2px;
     }
 }
